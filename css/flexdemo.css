@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url("https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald Regular"), local("Oswald-Regular"), url("https://fonts.gstatic.com/s/oswald/v13/pEobIV_lL25TKBpqVI_a2w.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html, boody {
+	width:100%;
+	height:100%;
+}
+
+div {
+  min-height: 50px;
+}
+
+.container {
+	display:flex;
+	margin:auto;
+	width:940px;
+	flex-direction:column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+	background-color: #fff; 
+  flex: 1; 
+  margin:4px;
+}
+
+div.item.flex-col {
+	background-color:#fff;
+}
+
+.column1 {
+	height:876px;
+	margin:4px;
+}
+
+.firstcolumn-image {
+	height:732px;
+	overflow:hidden;
+	position:relative;
+	text-align:center;
+}
+
+.firstcolumn-image:hover .tallimage {
+	cursor:pointer;
+	transform:scale(1.02);
+	-webkit-transform:scale(1.02);
+}
+
+.tallimage {
+	height:732px;
+	transition:all .2s ease;
+	-webkit-transition:all 150ms ease-out;
+	width:305px;
+}
+
+.cgrid {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:305px;	
+}
+
+.cgrid li {
+	overflow:hidden;
+	position:relative;
+	width:305px;	
+}
+
+.cgrid .topimage {
+	height:290px;
+}
+
+.cgrid .topimage img {
+	width:305px;
+	transition:all 150ms ease-out;
+}
+
+.cgrid .topimage > img:hover {
+	cursor:pointer;
+	transform:scale(1.02);
+}
+
+.description {
+	box-sizing:border-box;
+	color:#000;
+	font-family:'Oswald', 'Helvetica', sans-serif;
+	font-size:20px;
+	font-weight:400;
+	padding:5px;
+}
+
+.cgridbadge {
+	height:20px;
+	margin:15px 0 0 5px;
+	overflow:hidden;
+	width:;
+}
+
+.cgridbadgetext {
+	color:#8d8d8d;
+	font-family:'Lato', 'Helvetica', sans-serif;
+	font-size: 12px;
+	font-weight:900;
+	margin:15px 0 0 5px;
+	text-transform:uppercase;
+}
+
+.cgridgalleryicon {
+	bottom:7px;
+	color:#fff;
+	font-family:'Lato', 'Helvetica', sans-serif;
+	font-size:14px;
+	font-weight:900;
+	min-height:20px;
+	padding:5px;
+	position:absolute;
+	right:7px;
+	text-align:right;
+}
+
+.cgridsnipe {
+	background-color:#0ea8cc;
+	color:#fff;
+	font-family:'Oswald', 'Helvetica', sans-serif;
+	font-size:13px;
+	font-weight:700;
+	left:5px;
+	letter-spacing: .05em;
+	min-height:20px;
+	padding: 0 19px 0 19px;
+	position:absolute;
+	text-transform: uppercase;
+	top:5px;
+}
+
