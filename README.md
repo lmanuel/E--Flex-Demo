@@ -1,0 +1,1 @@
+E!News widget redone to use flexbox instead of default display block.
